@@ -8,5 +8,5 @@ A simple emacs-live pack to install el-get
 in your .emacs-live.el, add this:
 
 ```el
-(live-add-packs '(el-get-pack))
+(live-add-packs '("/path/to/el-get-pack"))
 ```
