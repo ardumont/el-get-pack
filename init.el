@@ -1,3 +1,9 @@
+;;; el-get-pack.el --- Make the packs el-get aware
+
+;;; Commentary:
+
+;;; Code:
+
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
@@ -7,3 +13,5 @@
     (eval-print-last-sexp)))
 
 (el-get 'sync)
+
+;;; el-get-pack.el ends here
