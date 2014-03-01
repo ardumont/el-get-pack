@@ -7,5 +7,3 @@
     (eval-print-last-sexp)))
 
 (el-get 'sync)
-
-(live-load-config-file "bindings.el")
