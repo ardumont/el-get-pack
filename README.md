@@ -1,12 +1,22 @@
 el-get-pack
 ============
 
-A simple emacs-live pack to install el-get
+A simple pack to install el-get.
 
-# install
+# Install
 
-in your .emacs-live.el, add this:
+This is compatible with [emacs-live-packs](https://github.com/ardumont/emacs-live-packs) and [prelude-packs](https://github.com/ardumont/prelude-packs).
 
-```el
-(live-add-packs '("/path/to/el-get-pack"))
+## [emacs-live-packs](https://github.com/ardumont/emacs-live-packs)
+
+Add this snippet in your `.emacs-live.el`:
+```elisp
+(emacs-live-packs/add-live-packs "~/.emacs-live-packs/" '("el-get-pack"))
+```
+
+## [prelude-packs](https://github.com/ardumont/prelude-packs)
+
+Add this snippet in your `prelude-packs.el`:
+```elisp
+(prelude-packs/load-packs "~/.prelude-packs/" '("el-get-pack"))
 ```
