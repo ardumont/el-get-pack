@@ -23,15 +23,15 @@
 
 (require 'el-get)
 
-(defvar el-get-pack-mode-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c l r") 'el-get-remove)
-    (define-key map (kbd "C-c l R") 'el-get-reinstall)
-    (define-key map (kbd "C-c l i") 'el-get-install)
-    (define-key map (kbd "C-c l u") 'el-get-update)
-    (define-key map (kbd "C-c l U") 'el-get-reload)
-    map)
-  "Keymap for el-get-pack mode.")
+(defvar el-get-pack-mode-map nil "Keymap for el-get-pack mode.")
+(setq el-get-pack-mode-map
+      (let ((map (make-sparse-keymap)))
+	(define-key map (kbd "C-c l r") 'el-get-remove)
+	(define-key map (kbd "C-c l R") 'el-get-reinstall)
+	(define-key map (kbd "C-c l i") 'el-get-install)
+	(define-key map (kbd "C-c l u") 'el-get-update)
+	(define-key map (kbd "C-c l U") 'el-get-reload)
+	map))
 
 (define-minor-mode el-get-pack-mode
   "Minor mode to consolidate el-get-pack extensions.
